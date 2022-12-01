@@ -1,0 +1,226 @@
+* {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/Cartoonero.woff2") format("woff2"),
+		   url("../fonts/Cartoonero.woff") format("woff");
+}
+
+html {
+	height: 100%;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+body {
+	position: fixed;
+	height: 100vh;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background: #E9DBD1;
+	background-size: cover;
+	background-position: center;
+	letter-spacing: 2px;
+	color: black;
+	font-family: 'Open sans';
+}
+
+section.header {
+	position: relative;
+	margin: auto;
+	padding: 20px;
+	> h3 {
+		font-size: 70px;
+	}
+
+	> div {
+		position: absolute;
+		display: flex;
+		width: 50px;
+		height: 50px;
+		float: right;
+		top: 20px;
+		right: 20px;
+		> svg {
+			width: 25px;
+			height: auto;
+		}
+	}
+}
+
+section.description {
+	margin: auto;
+	display: inline-block;
+	justify-content: center;
+	> img {
+		margin-bottom: 0px;
+		width: 30%;
+		height: auto;
+		@media (height < 1000px) {
+			width: 90px;
+		}
+	}
+	.settings {
+		width: 100px;
+		height: 100px;
+		background-color: rgba(255, 0, 0, 0.6);
+		display: inline-flex;
+		margin: 30px;
+		padding: 20px;
+		border-radius: 50%;
+	}
+
+	.center {
+		height: 30%;
+		justify-content: center;
+		align-items: center;
+		.message {
+			margin-top: 30px;
+			justify-content: center;
+			align-items: center;
+			font-size: 30px;
+			padding: 20px;
+			background-color: rgb(255, 255, 255);
+			border-radius: 15px;
+			@media (max-width: 1280px) {
+				font-size: 20px;
+			}
+			@media (height < 1000px) {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+section.timer {
+	font-size: 100px;
+	justify-content: center;
+	@media (height < 1000px) {
+		font-size: 50px;
+	}
+	.message {
+		display: inline;
+		justify-content: center;
+		align-items: center;
+		font-size: 30px;
+		padding: 20px;
+		background-color: rgb(255, 255, 255);
+		border-radius: 15px;
+	}
+	.clock {
+		display: flex;
+		margin-top: 50px;
+		.clockCase {
+			margin: 20px;
+			padding: 10px;
+			display: flex;
+			background-color: rgb(229, 229, 229, 0.1);
+			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+			border-radius: 15px;
+			width: 150px;
+			height: 200px;
+			@media (height < 1000px) {
+				width: 100px;
+				height: 150px;
+			}
+		}
+	}
+}
+
+section.todolist {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin: auto;
+	padding: 10px;
+	.clear {
+		display: inline-flex;
+		padding: 10px;
+		width: 20px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background-color: white;
+		border-radius: 50%;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		&:hover {
+			cursor: pointer;
+		}
+		> svg {
+			width: 20px;
+			height: auto;
+		}
+	}
+}
+
+div.newTask {
+	display: flex;
+	> input {
+		padding: 10px 0 10px 20px;
+		border-radius: 30px;
+		border: none;
+		text-align: left;
+		width: 300px;
+		height: 30px;
+		margin: 15px;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		:focus {
+			border: none;
+		}
+	}
+	.button {
+		> svg {
+			display: flex;
+			margin-left: -45px;
+			width: 16px;
+			height: auto;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+div.todo {
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+
+	> p {
+		margin-left: 50px;
+		text-align: left;
+	}
+
+	.click {
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		&:hover {
+			cursor: pointer;
+		}
+		> svg {
+			justify-content: center;
+			align-items: center;
+			margin: 10px;
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+div.list {
+	height: 30vh;
+	width: 300px;
+	text-align: left;
+	justify-content: center;
+	margin: auto;
+	overflow: scroll;
+}
