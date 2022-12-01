@@ -1,6 +1,5 @@
 import React from 'react'
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 
 function Header() {
@@ -12,12 +11,14 @@ function Header() {
 		top: '50%',
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
-		width: 400,
+		width: 500,
 		bgcolor: 'background.paper',
 		border: 'none',
 		borderRadius: '15px',
 		boxShadow: 24,
 		p: 4,
+		textAlign: 'left',
+		fontSize: '20px'
 	};
 
 	return (
@@ -34,27 +35,21 @@ function Header() {
 			<Modal
 				open={open}
 				onClose={handleClose}
-				aria-labelledby="modal-modal-title"
-				aria-describedby="modal-modal-description"
+				disableEnforceFocus
 			>
 				<Box sx={style}>
-					<Typography id="modal-modal-description" sx={{ mt: 2, textAlign: 'left'}}>
 						The secret to effective time management is...thinking in tomatoes rather than hours? It may seem silly at first, but millions of people swear by the life-changing power to the Pomodoro Technique. (Pomodoro is Italian for tomato. 🍅).
 
 						This popular time management method asks you to alternate pomodoros — focused work sessions — with frequent short breaks to promote sustained concentration and stave off mental fatigue.
-					</Typography>
-					<Typography id="modal-modal-description" sx={{ mt: 2, textAlign: 'left'}}>
+						<br />
+						<br/>
 						STEP 1 - Pick a task on your to do list ✏️
-					</Typography>
-					<Typography id="modal-modal-description" sx={{ mt: 2, textAlign: 'left'}}>
+						<br/>
 						STEP 2 - Set a timer of 25 or 50 minutes ⏰ 
-					</Typography>
-					<Typography id="modal-modal-description" sx={{ mt: 2, textAlign: 'left'}}>
+						<br/>
 						STEP 3 - Work on your task until the time is up 👩‍💻 
-					</Typography>
-					<Typography id="modal-modal-description" sx={{ mt: 2, textAlign: 'left'}}>
+						<br/>
 						STEP 4 - Take a break ☕ 
-					</Typography>
 				</Box>
 			</Modal>
 		</section>

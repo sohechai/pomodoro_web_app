@@ -26,7 +26,7 @@ function Description() {
 					:
 					<div>
 						<div className='message'>
-							Choose your timer sessions :
+							Set your timer sessions :
 						</div>
 						<div className='settings' onClick={setTo25}>
 							25 / 5
