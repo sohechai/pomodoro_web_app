@@ -2,30 +2,30 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 @font-face {
 	font-family: "Open Sans";
 	src: url("../fonts/PinkChicken-Regular.woff2") format("woff2"),
-		   url("../fonts/PinkChicken-Regular.woff") format("woff");
+		url("../fonts/PinkChicken-Regular.woff") format("woff");
 }
 
 html {
 	height: 100%;
-    top: 0;
-    left: 0;
-    outline: none;
+	top: 0;
+	left: 0;
+	outline: none;
 }
 
 body {
 	position: fixed;
 	height: 100vh;
-	top:0;
-	bottom:0;
-	right:0;
-	left:0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
 	background: #E9DBD1;
 	background-size: cover;
 	background-position: center;
@@ -38,14 +38,16 @@ section.header {
 	position: relative;
 	margin: auto;
 	padding: 20px;
-	> h3 {
+
+	>h3 {
 		font-size: 70px;
+
 		@media (height < 1000px) {
 			font-size: 50px;
 		}
 	}
 
-	> div {
+	>div {
 		position: absolute;
 		display: flex;
 		width: 50px;
@@ -53,7 +55,8 @@ section.header {
 		float: right;
 		top: 20px;
 		right: 20px;
-		> svg {
+
+		>svg {
 			width: 25px;
 			height: auto;
 		}
@@ -65,14 +68,17 @@ section.description {
 	display: inline-block;
 	justify-content: center;
 	height: 50vh;
-	> img {
+
+	>img {
 		margin-bottom: 0px;
 		width: 110px;
 		height: auto;
+
 		@media (height < 1000px) {
 			width: 70px;
 		}
 	}
+
 	.settings {
 		width: 100px;
 		height: 100px;
@@ -81,9 +87,11 @@ section.description {
 		margin: 60px 20px 0 20px;
 		padding: 20px;
 		border-radius: 50%;
+
 		&:hover {
 			cursor: pointer;
 		}
+
 		@media (height < 1000px) {
 			margin: 10px;
 			padding: 10px;
@@ -93,7 +101,8 @@ section.description {
 	.center {
 		height: 20%;
 		justify-content: center;
-		align-items: center;		
+		align-items: center;
+
 		.message {
 			margin-top: 40px;
 			justify-content: center;
@@ -102,10 +111,12 @@ section.description {
 			padding: 20px;
 			background-color: rgb(255, 255, 255);
 			border-radius: 15px;
+
 			@media (max-width: 1280px) {
 				font-size: 12px;
 				padding: 14px;
 			}
+
 			@media (height < 1000px) {
 				font-size: 12px;
 				margin-top: 0;
@@ -118,9 +129,11 @@ section.description {
 section.timer {
 	font-size: 100px;
 	justify-content: center;
+
 	@media (height < 1000px) {
 		font-size: 40px;
 	}
+
 	.message {
 		display: inline;
 		justify-content: center;
@@ -128,11 +141,13 @@ section.timer {
 		font-size: 30px;
 		background-color: rgb(255, 255, 255);
 		border-radius: 15px;
-		
+
 	}
+
 	.clock {
 		display: flex;
 		margin-top: 30px;
+
 		.clockCase {
 			margin: 20px;
 			padding: 10px;
@@ -142,6 +157,7 @@ section.timer {
 			border-radius: 15px;
 			width: 120px;
 			height: 150px;
+
 			@media (height < 1000px) {
 				width: 50px;
 				height: 100px;
@@ -156,11 +172,13 @@ section.todolist {
 	height: auto;
 	margin: auto;
 	padding: 10px;
-	> h1 {
+
+	>h1 {
 		@media (height < 1000px) {
 			font-size: 20px;
 		}
 	}
+
 	.clear {
 		display: inline-flex;
 		padding: 10px;
@@ -171,12 +189,15 @@ section.todolist {
 		background-color: white;
 		border-radius: 50%;
 		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 		&:hover {
 			cursor: pointer;
 		}
-		> svg {
+
+		>svg {
 			width: 20px;
 			height: auto;
+
 			@media (height < 1000px) {
 				width: 15px;
 			}
@@ -186,7 +207,8 @@ section.todolist {
 
 div.newTask {
 	display: flex;
-	> input {
+
+	>input {
 		padding: 10px 50px 10px 20px;
 		border-radius: 30px;
 		border: none;
@@ -195,23 +217,28 @@ div.newTask {
 		height: 30px;
 		margin: 15px;
 		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 		:focus {
 			border: none;
 		}
+
 		@media (height < 1000px) {
 			font-size: 10px;
 			padding: 5px 45px 5px 15px;
 		}
 	}
+
 	.button {
-		> svg {
+		>svg {
 			display: flex;
 			margin-left: -45px;
 			width: 16px;
 			height: auto;
+
 			&:hover {
 				cursor: pointer;
 			}
+
 			@media (height < 1000px) {
 				margin-left: -50px;
 			}
@@ -222,9 +249,11 @@ div.newTask {
 div.todo {
 	align-items: start;
 	display: inline-flex;
+	justify-content: start;
 	text-align: left;
 	margin: 4px;
-	> p {
+	width: 300px;
+	>p {
 		margin-left: 30px;
 		text-align: left;
 	}
@@ -233,16 +262,19 @@ div.todo {
 		width: 20px;
 		height: 20px;
 		border-radius: 50%;
+
 		&:hover {
 			cursor: pointer;
 		}
-		> svg {
+
+		>svg {
 			align-items: start;
 			width: 20px;
 			height: 20px;
 		}
 	}
 }
+
 div.list {
 	height: 25vh;
 	width: 300px;
@@ -251,9 +283,15 @@ div.list {
 	align-items: center;
 	margin: auto;
 	overflow: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+
+	::-webkit-scrollbar {
+		display: none;
+	}
+
 	@media (height < 1000px) {
 		height: 18vh;
-		width: 100%;
 		font-size: 14px;
 	}
 }
