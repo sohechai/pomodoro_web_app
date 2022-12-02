@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import alarm from '../sounds/alarm_clock_sound_effect.mp3'
 
 function Timer({ settings }) {
 	const [minutes, setMinutes] = useState(settings)
@@ -17,8 +18,11 @@ function Timer({ settings }) {
 					setSeconds(59)
 					setMinutes(minutes - 1)
 				} else {
+					const audio = new Audio(alarm);
+					audio.loop = false;
+					audio.play()
 					const breakTimer = (settings === 25) ? 4 : 9;
-					let minutes = displayMessage ? 24 : breakTimer
+					let minutes = displayMessage ? settings - 1 : breakTimer
 					let seconds = 59
 
 					setSeconds(seconds)
