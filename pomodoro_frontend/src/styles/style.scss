@@ -8,8 +8,8 @@
 
 @font-face {
 	font-family: "Open Sans";
-	src: url("../fonts/Cartoonero.woff2") format("woff2"),
-		   url("../fonts/Cartoonero.woff") format("woff");
+	src: url("../fonts/PinkChicken-Regular.woff2") format("woff2"),
+		   url("../fonts/PinkChicken-Regular.woff") format("woff");
 }
 
 html {
@@ -67,7 +67,7 @@ section.description {
 	height: 50vh;
 	> img {
 		margin-bottom: 0px;
-		width: 30%;
+		width: 110px;
 		height: auto;
 		@media (height < 1000px) {
 			width: 70px;
@@ -93,8 +93,7 @@ section.description {
 	.center {
 		height: 20%;
 		justify-content: center;
-		align-items: center;
-		padding-top: 20px;
+		align-items: center;		
 		.message {
 			margin-top: 40px;
 			justify-content: center;
@@ -104,11 +103,13 @@ section.description {
 			background-color: rgb(255, 255, 255);
 			border-radius: 15px;
 			@media (max-width: 1280px) {
-				font-size: 20px;
+				font-size: 12px;
+				padding: 14px;
 			}
 			@media (height < 1000px) {
-				font-size: 13px;
+				font-size: 12px;
 				margin-top: 0;
+				padding: 14px;
 			}
 		}
 	}
@@ -139,8 +140,8 @@ section.timer {
 			background-color: rgb(229, 229, 229, 0.1);
 			box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 			border-radius: 15px;
-			width: 150px;
-			height: 200px;
+			width: 100px;
+			height: 150px;
 			@media (height < 1000px) {
 				width: 50px;
 				height: 100px;
@@ -219,39 +220,40 @@ div.newTask {
 }
 
 div.todo {
-	justify-content: center;
-	align-items: center;
+	align-items: start;
+	display: inline-flex;
 	text-align: left;
-
+	margin: 4px;
 	> p {
-		margin-left: 50px;
+		margin-left: 30px;
 		text-align: left;
 	}
 
 	.click {
-		width: 15px;
-		height: 15px;
+		width: 20px;
+		height: 20px;
 		border-radius: 50%;
 		&:hover {
 			cursor: pointer;
 		}
 		> svg {
-			justify-content: center;
-			align-items: center;
-			margin: 10px;
+			align-items: start;
 			width: 20px;
 			height: 20px;
 		}
 	}
 }
 div.list {
-	height: 30vh;
+	height: 25vh;
 	width: 300px;
 	text-align: left;
 	justify-content: center;
+	align-items: center;
 	margin: auto;
 	overflow: scroll;
 	@media (height < 1000px) {
-		height: 20vh;
+		height: 18vh;
+		width: 100%;
+		font-size: 14px;
 	}
 }
