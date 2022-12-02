@@ -40,6 +40,9 @@ section.header {
 	padding: 20px;
 	> h3 {
 		font-size: 70px;
+		@media (height < 1000px) {
+			font-size: 50px;
+		}
 	}
 
 	> div {
@@ -67,7 +70,7 @@ section.description {
 		width: 30%;
 		height: auto;
 		@media (height < 1000px) {
-			width: 90px;
+			width: 70px;
 		}
 	}
 	.settings {
@@ -82,13 +85,13 @@ section.description {
 			cursor: pointer;
 		}
 		@media (height < 1000px) {
-			margin: 20px;
-			padding: 20px;
+			margin: 10px;
+			padding: 10px;
 		}
 	}
 
 	.center {
-		height: 30%;
+		height: 20%;
 		justify-content: center;
 		align-items: center;
 		padding-top: 20px;
@@ -104,7 +107,8 @@ section.description {
 				font-size: 20px;
 			}
 			@media (height < 1000px) {
-				font-size: 15px;
+				font-size: 13px;
+				margin-top: 0;
 			}
 		}
 	}
@@ -114,7 +118,7 @@ section.timer {
 	font-size: 100px;
 	justify-content: center;
 	@media (height < 1000px) {
-		font-size: 50px;
+		font-size: 40px;
 	}
 	.message {
 		display: inline;
@@ -138,8 +142,8 @@ section.timer {
 			width: 150px;
 			height: 200px;
 			@media (height < 1000px) {
-				width: 100px;
-				height: 150px;
+				width: 50px;
+				height: 100px;
 			}
 		}
 	}
@@ -151,6 +155,11 @@ section.todolist {
 	height: auto;
 	margin: auto;
 	padding: 10px;
+	> h1 {
+		@media (height < 1000px) {
+			font-size: 20px;
+		}
+	}
 	.clear {
 		display: inline-flex;
 		padding: 10px;
@@ -167,6 +176,9 @@ section.todolist {
 		> svg {
 			width: 20px;
 			height: auto;
+			@media (height < 1000px) {
+				width: 15px;
+			}
 		}
 	}
 }
@@ -187,6 +199,7 @@ div.newTask {
 		}
 		@media (height < 1000px) {
 			font-size: 10px;
+			padding: 5px 45px 5px 15px;
 		}
 	}
 	.button {

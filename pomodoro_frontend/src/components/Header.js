@@ -11,14 +11,14 @@ function Header() {
 		top: '50%',
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
-		width: 500,
+		width: 320,
 		bgcolor: 'background.paper',
 		border: 'none',
 		borderRadius: '15px',
 		boxShadow: 24,
 		p: 4,
 		textAlign: 'left',
-		fontSize: '20px'
+		fontSize: '15px'
 	};
 
 	return (
