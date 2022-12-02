@@ -7,7 +7,7 @@ function Todolist() {
 	const [todolist, setTodolist] = useState(tasks)
 	const handleChange = (e) => {
 		setInput(e.currentTarget.value)
-		handleSubmit()
+		// handleSubmit()
 	}
 
 	const handleSubmit = (e) => {

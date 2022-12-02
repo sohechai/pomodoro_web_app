@@ -13,7 +13,6 @@ function Description() {
 	}
 
 	useEffect(() => {
-		console.log(settings);
 	}, [settings])
 
 	return (
