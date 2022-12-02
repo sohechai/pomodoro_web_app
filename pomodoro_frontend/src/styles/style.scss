@@ -211,6 +211,9 @@ div.newTask {
 			&:hover {
 				cursor: pointer;
 			}
+			@media (height < 1000px) {
+				margin-left: -50px;
+			}
 		}
 	}
 }
