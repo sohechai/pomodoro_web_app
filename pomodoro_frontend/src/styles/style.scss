@@ -41,7 +41,7 @@ body {
 	bottom: 0;
 	right: 0;
 	left: 0;
-	background: #e4d9d2;
+	background: #eeeeee;
 	background-size: cover;
 	background-position: center;
 	letter-spacing: 2px;
@@ -114,9 +114,9 @@ section.description {
 			font-size: 16px;
 			padding: 16px 32px;
 			border-radius: 16px;
-			background: #e4d9d2;
-			box-shadow: 5px 5px 10px #c6bdb7,
-				-5px -5px 10px #fff5ed;
+			background: #eeeeee;
+			box-shadow: inset 5px 5px 10px #d9d9d9,
+				inset -5px -5px 10px #ffffff;
 
 			@media (height < 1000px) {
 				margin-top: 0;
@@ -137,16 +137,16 @@ section.description {
 				margin: 64px 8px;
 				padding: 24px 32px;
 				border-radius: 16px;
-				background: linear-gradient(145deg, #f4e8e1, #cdc3bd);
-				box-shadow: 5px 5px 10px #c6bdb7,
-					-5px -5px 10px #fff5ed;
+				background: #eeeeee;
+				box-shadow: 5px 5px 10px #c6c6c6,
+					-5px -5px 10px #ffffff;
 				transition: background-color 1s ease-out;
 
 				&:hover {
 					cursor: pointer;
-					background: linear-gradient(145deg, #cdc3bd, #f4e8e1);
-					box-shadow: 18px 18px 36px #e2d7d0,
-						-18px -18px 36px #e6dbd4;
+					background: linear-gradient(145deg, #d6d6d6, #ffffff);
+					box-shadow: 5px 5px 10px #c6c6c6,
+						-5px -5px 10px #ffffff;
 				}
 
 				@media (height < 1000px) {
@@ -222,15 +222,15 @@ section.todolist {
 		align-items: center;
 		text-align: center;
 		border-radius: 16px;
-		background: linear-gradient(145deg, #f4e8e1, #cdc3bd);
-		box-shadow: 5px 5px 10px #c6bdb7,
-			-5px -5px 10px #fff5ed;
+		background: #eeeeee;
+		box-shadow: 5px 5px 10px #c6c6c6,
+			-5px -5px 10px #ffffff;
 
 		&:hover {
 			cursor: pointer;
-			background: linear-gradient(145deg, #cdc3bd, #f4e8e1);
-			box-shadow: 18px 18px 36px #e2d7d0,
-				-18px -18px 36px #e6dbd4;
+			background: linear-gradient(145deg, #d6d6d6, #ffffff);
+			box-shadow: 5px 5px 10px #c6c6c6,
+				-5px -5px 10px #ffffff;
 		}
 
 		>svg {

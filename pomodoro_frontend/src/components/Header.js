@@ -13,7 +13,7 @@ function Header() {
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
 		width: 320,
-		bgcolor: '#e4d9d2',
+		bgcolor: '#ffffff',
 		border: 'none',
 		borderRadius: '17px',
 		boxShadow: 24,
