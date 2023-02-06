@@ -8,7 +8,7 @@ function Timer({ settings }) {
 	const timerMinutes = minutes < 10 ? `0${minutes}` : minutes
 	const timerSeconds = seconds < 10 ? `0${seconds}` : seconds
 
-	
+
 	useEffect(() => {
 		let interval = setInterval(() => {
 			clearInterval(interval)
@@ -38,12 +38,12 @@ function Timer({ settings }) {
 
 	return (
 		<section className='timer'>
-			<div className="message">
+			<div className="messageTimer">
 				{
 					displayMessage ?
-					<div className='message'>Take a break ! Starting again in :</div>
-					:
-					<div className='message'>Keep working hard ! You will take a break in :</div>
+						<div className='message'>Take a break ! Starting again in :</div>
+						:
+						<div className='message'>Keep working hard ! You will take a break in :</div>
 				}
 			</div>
 			<div className="clock">

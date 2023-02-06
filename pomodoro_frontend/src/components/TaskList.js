@@ -10,7 +10,7 @@ const TaskList = ({ tasksData, handleCheckbox }) => {
 					return (
 						<Todo key={item.id} task={item} handleCheckbox={handleCheckbox} />
 					)
-			})}
+				})}
 		</div>
 	)
 }

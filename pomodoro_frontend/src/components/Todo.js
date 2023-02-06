@@ -1,8 +1,7 @@
 import React from 'react'
 
 function Todo({ task, handleCheckbox }) {
-	const clickBox = (e) => {
-		// e.preventDefault()
+	const clickBox = () => {
 		handleCheckbox(task.id);
 	}
 

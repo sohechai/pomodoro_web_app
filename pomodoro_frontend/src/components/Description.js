@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import piou from '../images/pomodoro_logo.png'
 import Timer from './Timer'
 
 function Description() {
@@ -17,25 +16,24 @@ function Description() {
 
 	return (
 		<section className='description'>
-			<img alt="piou" src={piou} />
 			<div className='center'>
-			{
-				settings !== 0 ?
-					<Timer settings={settings} />
-					:
-					<div>
-						<div className='message'>
-							Set your timer sessions :
+				{
+					settings !== 0 ?
+						<Timer settings={settings} />
+						:
+						<div className='descriptionContenu'>
+							<div className='message'>
+								Set your timer sessions : (work / break)
+							</div>
+							<div className='settings' onClick={setTo25}>
+								25min / 5min
+							</div>
+							<div className='settings' onClick={setTo50}>
+								50min / 10min
+							</div>
 						</div>
-						<div className='settings' onClick={setTo25}>
-							25 / 5
-						</div>
-						<div className='settings' onClick={setTo50}>
-							50 / 10
-						</div>
-					</div>
 
-			}
+				}
 			</div>
 		</section>
 	)
