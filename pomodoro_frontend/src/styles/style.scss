@@ -137,9 +137,9 @@ section.description {
 				margin: 64px 8px;
 				padding: 24px 32px;
 				border-radius: 16px;
-				background: #e4d9d2;
-				box-shadow: 10px 10px 20px #c2b8b3,
-					-10px -10px 20px #fffaf2;
+				background: linear-gradient(145deg, #f4e8e1, #cdc3bd);
+				box-shadow: 5px 5px 10px #c6bdb7,
+					-5px -5px 10px #fff5ed;
 				transition: background-color 1s ease-out;
 
 				&:hover {
@@ -228,6 +228,9 @@ section.todolist {
 
 		&:hover {
 			cursor: pointer;
+			background: linear-gradient(145deg, #cdc3bd, #f4e8e1);
+			box-shadow: 18px 18px 36px #e2d7d0,
+				-18px -18px 36px #e6dbd4;
 		}
 
 		>svg {
