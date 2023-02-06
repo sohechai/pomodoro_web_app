@@ -113,7 +113,7 @@ section.description {
 			align-items: center;
 			font-size: 16px;
 			padding: 16px 32px;
-			border-radius: 17px;
+			border-radius: 16px;
 			background: #e4d9d2;
 			box-shadow: 5px 5px 10px #c6bdb7,
 				-5px -5px 10px #fff5ed;
@@ -136,12 +136,11 @@ section.description {
 				display: inline-flex;
 				margin: 64px 8px;
 				padding: 24px 32px;
-				border-radius: 69px;
-				background: linear-gradient(145deg, #f4e8e1, #cdc3bd);
-				box-shadow: 18px 18px 36px #cfc5bf,
-					-18px -18px 36px #f9ede5;
+				border-radius: 16px;
+				background: #e4d9d2;
+				box-shadow: 10px 10px 20px #c2b8b3,
+					-10px -10px 20px #fffaf2;
 				transition: background-color 1s ease-out;
-
 
 				&:hover {
 					cursor: pointer;
@@ -185,7 +184,7 @@ section.timer {
 			margin: 16px;
 			padding: 10px;
 			display: flex;
-			border-radius: 17px;
+			border-radius: 16px;
 			background: #e4d9d2;
 			box-shadow: 5px 5px 10px #c6bdb7,
 				-5px -5px 10px #fff5ed;
@@ -222,7 +221,7 @@ section.todolist {
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		border-radius: 17px;
+		border-radius: 16px;
 		background: linear-gradient(145deg, #f4e8e1, #cdc3bd);
 		box-shadow: 5px 5px 10px #c6bdb7,
 			-5px -5px 10px #fff5ed;
@@ -251,7 +250,7 @@ section.todolist {
 			width: 300px;
 			height: 30px;
 			margin: 15px;
-			border-radius: 17px;
+			border-radius: 16px;
 			background: #e6e6e6;
 			box-shadow: inset 5px 5px 10px #c8c8c8,
 				inset -5px -5px 10px #ffffff;
