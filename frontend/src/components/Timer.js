@@ -43,7 +43,7 @@ function Timer({ settings }) {
 					displayMessage ?
 						<div className='message'>Take a break ! Starting again in :</div>
 						:
-						<div className='message'>Keep working hard ! You will take a break in :</div>
+						<div className='message'>keep working hard ! You will take a break in :</div>
 				}
 			</div>
 			<div className="clock">

@@ -16,11 +16,11 @@ input:focus {
 	border: none;
 }
 
-@font-face {
-	font-family: "Open Sans";
-	src: url("../fonts/Quicksand/quicksand-v30-latin-regular.woff2") format("woff2"),
-		url("../fonts/Quicksand/quicksand-v30-latin-regular.woff") format("woff");
-}
+// @font-face {
+// 	font-family: "Open Sans";
+// 	src: url("../fonts/Quicksand/quicksand-v30-latin-regular.woff2") format("woff2"),
+// 		url("../fonts/Quicksand/quicksand-v30-latin-regular.woff") format("woff");
+// }
 
 html {
 	height: 100%;
@@ -46,7 +46,7 @@ body {
 	background-position: center;
 	letter-spacing: 2px;
 	color: black;
-	font-family: 'Open sans';
+	font-family: "GeoSansLight", sans-serif;
 	overflow: hidden;
 }
 

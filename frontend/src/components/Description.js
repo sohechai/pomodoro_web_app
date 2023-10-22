@@ -23,7 +23,7 @@ function Description() {
 						:
 						<div className='descriptionContenu'>
 							<div className='message'>
-								Set your timer sessions : (work / break)
+								set your timer sessions : (work / break)
 							</div>
 							<div className='settings' onClick={setTo25}>
 								25min / 5min
